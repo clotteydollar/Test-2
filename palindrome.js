@@ -1,24 +1,26 @@
-function isPalindrom(text) {
-    var textReversed = text.toLowerCase().split("").reverse("").join("")
-    return text === textReversed;
-}
+// function isPalindrom(text) {
+//     var textReversed = text.toLowerCase().split("").reverse("").join("")
+//     return text === textReversed;
+// }
+//
+//
+// console.log(isPalindrom("madam"));
+//
+//
+// var isPalindrome = function (text) {
+//     var textlength = text.length;
+//     if (textlength===0|| textlength===1){
+//         return true;
+//     }
+//     if(text[0]===text[textlength-1]){
+//         return isPalindrom(text.slice(1,textlength-1))
+//     }
+//     return false;
+// }
+//
+// console.log(isPalindrom("madam"));
 
 
-console.log(isPalindrom("madam"));
-
-
-var isPalindrome = function (text) {
-    var textlength = text.length;
-    if (textlength===0|| textlength===1){
-        return true;
-    }
-    if(text[0]===text[textlength-1]){
-        return isPalindrom(text.slice(1,textlength-1))
-    }
-    return false;
-}
-
-console.log(isPalindrom("madam"));
 
 const today =new Date()
 const day = today.getDay()
