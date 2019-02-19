@@ -41,18 +41,49 @@ console.log(removemultiple);
 
 function howmanytimes(str1,str2) {
     // the second string is splited into arrays to target them individually
-    var words =str2.split(" ")
+    var words =str2.split("");
+    console.log(words)
+    var count=0;
     // a for loop is done to get words individually in order to compare the two
-    for (var i=0;i<words.length;i++){
+    for (i in words){
+        var getsplited = words[i].split()
+        console.log(getsplited)
 
-        if (str1===words[i]){
-            console.log(str1)
+        if (str1[::]===words[i]){
+           count ++;
+           console.log(count)
         }
+
     }
 
 }
 
-console.log(howmanytimes("am", "i am a boy"));
+console.log(howmanytimes("am", "ample time is amazingly available"));
+
+
+function count(str1, str2){
+    var string = str1.split(' ');
+    var count = 0;
+    for (var i = 0; i < string.length; i++) {
+        if(string[i] === str2){
+            count++;
+        }
+        if(string[i] === str2){
+            count++;
+            return count;
+        }
+    }
+    return count;
+};
+
+console.log(count("The quick brown fox jumps over the lazy dog", 'fox', false));
+console.log(count("The quick brown fox jumps over the lazy dog", 'the'));
+
+
+
+
+
+
 
 
 function largeThree(numbers) {
