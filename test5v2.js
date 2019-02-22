@@ -1,10 +1,10 @@
 //function to generate stars
+var numbers=[1,2,3,4,5,6];
+function star(numbers) {
 
-function star(number)
-{
-    for(var i=0;i<number;i++) {
+    for(var i=0;i<numbers   ;i++) {
          var output="";
-        for(var j=0;j<number-i;j++) {
+        for(var j=0;j<numbers-i;j++) {
 
             output +=" "
         }
@@ -14,10 +14,7 @@ function star(number)
         console.log(output);
     }
 }
-star(5)
-
-
-
+star(numbers)
 
 //function for alphabetical order
 function apha(words) {
